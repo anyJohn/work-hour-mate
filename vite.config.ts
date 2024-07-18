@@ -14,7 +14,9 @@ export default defineConfig(({ command }) => {
   return {
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url))
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
+        '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
+        '@views': fileURLToPath(new URL('./src/view', import.meta.url))
       }
     },
     plugins: [
