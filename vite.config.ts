@@ -16,7 +16,8 @@ export default defineConfig(({ command }) => {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url)),
         '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
-        '@views': fileURLToPath(new URL('./src/view', import.meta.url))
+        '@views': fileURLToPath(new URL('./src/views', import.meta.url)),
+        '@electron': fileURLToPath(new URL('./electron', import.meta.url))
       }
     },
     plugins: [
